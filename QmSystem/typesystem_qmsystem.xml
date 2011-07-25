@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<typesystem package="QmSystem">
+    <load-typesystem name="typesystem_core.xml" generate="no"/>
+    <namespace-type name="MeeGo" generate="no">
+        <object-type name="QmActivity" since="0.1">
+            <enum-type name="Activity"/>
+        </object-type>
+        <object-type name="QmBattery" since="0.1">
+            <enum-type name="Mode"/>
+            <enum-type name="State"/>
+            <enum-type name="Level"/>
+            <enum-type name="Period"/>
+            <enum-type name="ChargerType"/>
+            <enum-type name="ChargingState"/>
+            <enum-type name="BatteryState"/>
+            <enum-type name="BatteryCondition"/>
+            <enum-type name="RemainingTimeMode"/>
+        </object-type>
+        <object-type name="QmCABC" since="0.1">
+            <enum-type name="Mode"/>
+        </object-type>
+        <object-type name="QmDeviceMode" since="0.1">
+            <enum-type name="DeviceMode"/>
+            <enum-type name="PSMState"/>
+        </object-type>
+        <object-type name="QmDisplayState" since="0.1">
+            <enum-type name="DisplayState"/>
+        </object-type>
+        <object-type name="QmHeartbeat" since="0.1">
+            <enum-type name="WaitMode"/>
+            <enum-type name="SignalNeed"/>
+        </object-type>
+        <object-type name="QmKeys" since="0.1">
+            <enum-type name="KeyboardSliderPosition"/>
+            <enum-type name="CameraKeyPosition"/>
+            <enum-type name="LensCoverPosition"/>
+            <enum-type name="Key"/>
+            <enum-type name="State"/>
+        </object-type>
+        <object-type name="QmLocks" since="0.1">
+            <enum-type name="Locks"/>
+            <enum-type name="Lock"/>
+            <enum-type name="State"/>
+        </object-type>
+        <object-type name="QmSystemState" since="0.1">
+            <enum-type name="NextState"/>
+            <enum-type name="StateIndication"/>
+            <enum-type name="BootReason"/>
+            <enum-type name="RunState"/>
+        </object-type>
+        <object-type name="QmThermal" since="0.1">
+            <enum-type name="ThermalState"/>
+        </object-type>
+        <object-type name="QmTime" since="0.1">
+            <enum-type name="WhatChanged"/>
+            <enum-type name="SettingsSynchronizationPolicy"/>
+            <enum-type name="DisconnectionPolicy"/>
+            <enum-type name="AutoTimeZoneStatus"/>
+            <enum-type name="AutoSystemTimeStatus"/>
+
+            <!-- Getting undefined symbols on those functions below -->
+            <modify-function signature="synchronize()" remove="all"/>
+            <modify-function signature="setSynchronizationPolicy(MeeGo::QmTime::SettingsSynchronizationPolicy)" remove="all"/>
+            <modify-function signature="setDisconnectionPolicy(MeeGo::QmTime::DisconnectionPolicy)" remove="all"/>
+        </object-type>
+    </namespace-type>
+
+    <suppress-warning text="Shadowing: QContactDetail::operator=(const QtMobility::QContactDetail &amp; other) and *"/>
+    <suppress-warning text="Final class 'QContactAbstractRequest' set to non-final, as it is extended by other classes"/>
+</typesystem>
