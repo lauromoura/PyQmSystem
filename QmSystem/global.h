@@ -7,6 +7,7 @@
 #include <qmals.h>
 #include <qmbattery.h>
 #include <qmcabc.h>
+#include <qmcallstate.h>
 #include <qmcompass.h>
 #include <qmdevicemode.h>
 #include <qmdisplaystate.h>
@@ -18,8 +19,12 @@
 #include <qmorientation.h>
 #include <qmproximity.h>
 #include <qmrotation.h>
+#include <qmsensor.h>
+#include <qmsysteminformation.h>
 #include <qmsystemstate.h>
 #include <qmtap.h>
 #include <qmthermal.h>
 #include <qmtime.h>
+#include <qmusbmode.h>
+#include <qmwatchdog.h>
 

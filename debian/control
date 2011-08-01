@@ -1,0 +1,24 @@
+Source: python-qmsystem
+Section: python
+Priority: optional
+Maintainer: Bruno Araujo <bruno.araujo@indt.org.br>
+Build-Depends: debhelper, cmake (>= 2.6.0), pkg-config, python-all-dev (>= 2.5.2-3), python-all-dbg (>= 2.5.2-3),
+    python-support (>= 0.3.9), shiboken (>= 1.0.5), generatorrunner (>= 0.6.11), libshiboken-dev (>= 1.0.5),
+    python-pyside (>= 1.0.5), libpyside-dev (>= 1.0.5), shiboken-dbg (>= 1.0.5),
+    python-pyside-dbg (>= 1.0.5), libqmsystem2-dev (>= 1.2.0)
+Standards-Version: 3.8.4
+XS-Python-Version: >= 2.6
+
+Package: python-qmsystem-dbg
+Architecture: any
+Priority: extra
+Section: debug
+Depends: ${shlibs:Depends}, ${misc:Depends},
+	 python-qmsystem (= ${binary:Version})
+Description: Python bindings for the QmSystem - debug symbols.
+
+Package: python-qmsystem
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-pyside.qtcore
+Description: Python bindings for QmSystem.
+
