@@ -2,15 +2,25 @@ project(qmsystem)
 
 set(QmSystem_SRCS
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/qmsystem_module_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmaccelerometer_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmactivity_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmals_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmbattery_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmcabc_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmcompass_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmdevicemode_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmdisplaystate_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmheartbeat_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmkeys_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmled_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmlocks_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmmagnetometer_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmorientation_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmproximity_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmrotation_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmsensor_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmsystemstate_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmtap_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmthermal_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmtime_wrapper.cpp
     )
