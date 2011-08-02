@@ -2,8 +2,12 @@
 <typesystem package="QmSystem">
     <load-typesystem name="typesystem_core.xml" generate="no"/>
     <namespace-type name="MeeGo" generate="no">
+        <object-type name="QmAccelerometer" since="0.1"/>
         <object-type name="QmActivity" since="0.1">
             <enum-type name="Activity"/>
+        </object-type>
+        <object-type name="QmALS" since="0.1">
+            <enum-type name="QmAlsReading"/>
         </object-type>
         <object-type name="QmBattery" since="0.1">
             <enum-type name="Mode"/>
@@ -18,6 +22,13 @@
         </object-type>
         <object-type name="QmCABC" since="0.1">
             <enum-type name="Mode"/>
+        </object-type>
+        <object-type name="QmCallState" since="0.1">
+            <enum-type name="State"/>
+            <enum-type name="Type"/>
+        </object-type>
+        <object-type name="QmCompass" since="0.1">
+            <enum-type name="QmCompassReading"/>
         </object-type>
         <object-type name="QmDeviceMode" since="0.1">
             <enum-type name="DeviceMode"/>
@@ -37,16 +48,37 @@
             <enum-type name="Key"/>
             <enum-type name="State"/>
         </object-type>
+        <object-type name="QmLED" since="0.1">
+        </object-type>
         <object-type name="QmLocks" since="0.1">
             <enum-type name="Locks"/>
             <enum-type name="Lock"/>
             <enum-type name="State"/>
         </object-type>
+        <object-type name="QmMagnetometer" since="0.1">
+            <enum-type name="QmMagnetometerReading"/>
+        </object-type>
+        <object-type name="QmOrientation" since="0.1">
+            <enum-type name="Orientation"/>
+            <enum-type name="QmOrientationReading"/>
+        </object-type>
+        <object-type name="QmProximity" since="0.1">
+            <enum-type name="QmProximityReading"/>
+        </object-type>
+        <object-type name="QmRotation" since="0.1"/>
+        <object-type name="QmSensor" since="0.1">
+            <enum-type name="SessionType"/>
+        </object-type>
+        <object-type name="QmSystemInformation" since="0.1"/>
         <object-type name="QmSystemState" since="0.1">
             <enum-type name="NextState"/>
             <enum-type name="StateIndication"/>
             <enum-type name="BootReason"/>
             <enum-type name="RunState"/>
+        </object-type>
+        <object-type name="QmTap" since="0.1">
+            <enum-type name="Type"/>
+            <enum-type name="Direction"/>
         </object-type>
         <object-type name="QmThermal" since="0.1">
             <enum-type name="ThermalState"/>
@@ -63,6 +95,12 @@
             <modify-function signature="setSynchronizationPolicy(MeeGo::QmTime::SettingsSynchronizationPolicy)" remove="all"/>
             <modify-function signature="setDisconnectionPolicy(MeeGo::QmTime::DisconnectionPolicy)" remove="all"/>
         </object-type>
+        <object-type name="QmUSBMode" since="0.1">
+            <enum-type name="Mode"/>
+            <enum-type name="MountPath"/>
+            <enum-type name="MountOption"/>
+        </object-type>
+        <object-type name="QmProcessWatchdog" since="0.1"/>
     </namespace-type>
 
     <suppress-warning text="Shadowing: QContactDetail::operator=(const QtMobility::QContactDetail &amp; other) and *"/>
