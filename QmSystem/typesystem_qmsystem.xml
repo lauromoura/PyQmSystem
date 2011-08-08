@@ -3,7 +3,7 @@
     <load-typesystem name="typesystem_core.xml" generate="no"/>
     <namespace-type name="MeeGo" generate="no">
         <object-type name="QmAccelerometer" since="0.1"/>
-        <object-type name="QmAccelerometerReading" since="0.1"/>
+        <value-type name="QmAccelerometerReading" since="0.1"/>
         <object-type name="QmActivity" since="0.1">
             <enum-type name="Activity"/>
         </object-type>
@@ -25,7 +25,7 @@
             <enum-type name="Type"/>
         </object-type>
         <object-type name="QmCompass" since="0.1"/>
-        <object-type name="QmCompassReading" since="0.1"/>
+        <value-type name="QmCompassReading" since="0.1"/>
         <object-type name="QmDeviceMode" since="0.1">
             <enum-type name="DeviceMode"/>
             <enum-type name="PSMState"/>
@@ -51,18 +51,18 @@
             <enum-type name="State"/>
         </object-type>
         <object-type name="QmMagnetometer" since="0.1"/>
-        <object-type name="QmMagnetometerReading" since="0.1"/>
+        <value-type name="QmMagnetometerReading" since="0.1"/>
         <object-type name="QmOrientation" since="0.1">
             <enum-type name="Orientation"/>
         </object-type>
-        <object-type name="QmOrientationReading" since="0.1"/>
+        <value-type name="QmOrientationReading" since="0.1"/>
         <object-type name="QmProximity" since="0.1"/>
         <object-type name="QmRotation" since="0.1"/>
-        <object-type name="QmRotationReading" since="0.1"/>
+        <value-type name="QmRotationReading" since="0.1"/>
         <object-type name="QmSensor" since="0.1">
             <enum-type name="SessionType"/>
         </object-type>
-        <object-type name="QmSensorReading" since="0.1"/>
+        <value-type name="QmSensorReading" since="0.1"/>
         <object-type name="QmSystemInformation" since="0.1"/>
         <object-type name="QmSystemState" since="0.1">
             <enum-type name="NextState"/>
@@ -74,7 +74,7 @@
             <enum-type name="Type"/>
             <enum-type name="Direction"/>
         </object-type>
-        <object-type name="QmTapReading" since="0.1"/>
+        <value-type name="QmTapReading" since="0.1"/>
         <object-type name="QmThermal" since="0.1">
             <enum-type name="ThermalState"/>
         </object-type>
