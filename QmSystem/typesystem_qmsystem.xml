@@ -8,6 +8,7 @@
             <enum-type name="Activity"/>
         </object-type>
         <object-type name="QmALS" since="0.1"/>
+        <primitive-type name="QmAlsReading" since="0.1"/>
         <object-type name="QmBattery" since="0.1">
             <enum-type name="BatteryCondition"/>
             <enum-type name="BatteryState"/>
@@ -63,6 +64,7 @@
             <enum-type name="SessionType"/>
         </object-type>
         <value-type name="QmSensorReading" since="0.1"/>
+        <value-type name="QmIntReading" since="0.1"/>
         <object-type name="QmSystemInformation" since="0.1"/>
         <object-type name="QmSystemState" since="0.1">
             <enum-type name="NextState"/>

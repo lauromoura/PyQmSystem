@@ -26,6 +26,7 @@ set(QmSystem_SRCS
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmrotationreading_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmsensor_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmsensorreading_wrapper.cpp
+    ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmintreading_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmsysteminformation_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmsystemstate_wrapper.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/QmSystem/meego_qmtap_wrapper.cpp
